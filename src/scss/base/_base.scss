@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap");
+
+$text: #615551;
+$container: #f9f5f3;
+$list: #ffffff;
+$form__container: #f9f5f3;
+$primary: #f38e82;
+$secondary: #fbdb89;
+$tertiary: #f48982;
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, $secondary, $tertiary);
+  height: 100vh;
+  font-family: "Work Sans", sans-serif;
+  color: $text;
+  font-size: 62.5%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 6rem;
+}

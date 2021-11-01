@@ -1,0 +1,46 @@
+@mixin basic__container {
+  background-color: $container;
+  border-radius: 10px;
+}
+
+@mixin basic__border {
+  border: none;
+  border-radius: 12px;
+}
+
+@mixin basic__input {
+  @include basic__border;
+  @include primary__font;
+  outline: none;
+  margin-top: 0.2rem;
+}
+
+@mixin placeholder__font {
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+
+@mixin primary__font {
+  font-family: inherit;
+  font-size: 1rem;
+  color: $text;
+}
+
+@mixin heading__font {
+  font-size: 1.4rem;
+  color: $text;
+}
+
+@mixin primary__btn {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  background-color: $primary;
+  color: white;
+  &:hover {
+    transform: translateY(-4px);
+  }
+}

@@ -1,0 +1,21 @@
+.main {
+  width: 60rem;
+  border-radius: 10px;
+  overflow: hidden;
+  @include basic__container;
+
+  &__container {
+    display: flex;
+  }
+
+  &__column:first-child {
+    background-color: $list;
+    width: 60%;
+    height: 35rem;
+    overflow: scroll;
+  }
+}
+
+.favorite {
+  color: $primary;
+}

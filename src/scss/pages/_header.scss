@@ -1,0 +1,18 @@
+.nav {
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $container;
+    height: 3rem;
+    padding: 0.5rem 2rem;
+  }
+  &__link {
+    font-size: 1.4rem;
+    transition: all 0.2s ease-in-out;
+    color: $secondary;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
